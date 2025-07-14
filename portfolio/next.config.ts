@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  // Optional: Optimize for static hosting
+  trailingSlash: true,
+  // Add other Next.js configurations as needed
 };
 
-export default nextConfig;
+module.exports = nextConfig;
