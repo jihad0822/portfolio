@@ -12,7 +12,7 @@ export default function Portfolio() {
       description:
         "Migrated from Console as code to Infrastructure as Code with AWS CDK Typescript",
       technologies: ["Terraform", "AWS", "Azure", "GCP", "GitHub Actions"],
-      link: "https://github.com/yourusername/multi-cloud-infra",
+      link: "git@github.com:jihad0822/techhealth-migration.git",
       icon: <Cloud className="h-5 w-5" />,
     },
     {
@@ -186,7 +186,7 @@ export default function Portfolio() {
 
           <div className="flex justify-center gap-4">
             <Button asChild className="bg-white text-purple-600 hover:bg-gray-100 shadow-lg">
-              <Link href="mailto:your.email@example.com">Email Me</Link>
+              <Link href="mailto:jihadmuhammad822@gmail.com">Email Me</Link>
             </Button>
             <Button
               variant="outline"
