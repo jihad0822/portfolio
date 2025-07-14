@@ -179,9 +179,9 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Let's Connect</h2>
+          <h2 className="text-3xl font-bold mb-4">Lets Connect</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Interested in collaborating or discussing cloud engineering opportunities? I'd love to hear from you.
+            Interested in collaborating or discussing cloud engineering opportunities? I would love to hear from you.
           </p>
 
           <div className="flex justify-center gap-4">
