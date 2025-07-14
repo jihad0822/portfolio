@@ -69,7 +69,7 @@ export default function Portfolio() {
           <div className="mb-8">
             <div className="relative mb-6">
               <Image
-                src="/profile_pic.jpeg"
+                src="/profile_pic.png"
                 alt="Profile"
                 width={150}
                 height={150}
