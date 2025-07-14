@@ -12,7 +12,7 @@ export default function Portfolio() {
       description:
         "Migrated from Console as code to Infrastructure as Code with AWS CDK Typescript",
       technologies: ["Terraform", "AWS", "Azure", "GCP", "GitHub Actions"],
-      link: "git@github.com:jihad0822/techhealth-migration.git",
+      link: "https://github.com/jihad0822/techhealth-migration",
       icon: <Cloud className="h-5 w-5" />,
     },
     {
