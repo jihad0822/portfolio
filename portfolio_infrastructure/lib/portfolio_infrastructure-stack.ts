@@ -8,9 +8,6 @@ export class PortfolioInfrastructureStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const amplifyRole = iam.Role.fromRoleName(this, 'AmplifyRole', 'AmplifyRole-dmnlv8duzyjjd', {
-      mutable: false,
-    });
 
     const amplifyApp = new amplify.App(this, 'PortfolioApplication', {
       appName: 'Portfolio',
@@ -19,7 +16,7 @@ export class PortfolioInfrastructureStack extends cdk.Stack {
         repository: 'portfolio',
         oauthToken: cdk.SecretValue.secretsManager('github-token'),
       }),
-      role: amplifyRole,
+    
       buildSpec: codebuild.BuildSpec.fromObject({
         version: '1.0',
         frontend: {
@@ -41,7 +38,7 @@ export class PortfolioInfrastructureStack extends cdk.Stack {
             },
           },
           artifacts: {
-            baseDirectory: 'portfolio/.next',
+            baseDirectory: 'portfolio/out',
             files: ['**/*'],
           },
           cache: {
