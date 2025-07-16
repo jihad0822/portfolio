@@ -16,10 +16,10 @@ export default function Portfolio() {
       icon: <Cloud className="h-5 w-5" />,
     },
     {
-      title: "Kubernetes Monitoring Stack",
+      title: "Next.Js Portfolio Site on AWS Amplify",
       description:
-        "Complete observability solution with Prometheus, Grafana, and Jaeger for microservices monitoring and distributed tracing.",
-      technologies: ["Kubernetes", "Prometheus", "Grafana", "Jaeger", "Helm"],
+        "Host your portfolio site on AWS Amplify with Next.js for server-side rendering and static site generation.",
+      technologies: ["Next.js", "AWS Amplify", "React", "Serverless", "CI/CD"],
       link: "https://github.com/yourusername/k8s-monitoring",
       icon: <Server className="h-5 w-5" />,
     },
@@ -32,7 +32,7 @@ export default function Portfolio() {
       icon: <Database className="h-5 w-5" />,
     },
     {
-      title: "CloudPipeline",
+      title: "NA",
       description:
         "Implementation of zero-trust architecture using HashiCorp Vault, Consul Connect, and service mesh for secure microservices communication.",
       technologies: ["HashiCorp Vault", "Consul", "Istio", "mTLS", "RBAC"],
