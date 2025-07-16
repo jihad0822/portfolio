@@ -1,11 +1,17 @@
 import * as cdk from 'aws-cdk-lib';
 import * as amplify from '@aws-cdk/aws-amplify-alpha';
 import * as codebuild from 'aws-cdk-lib/aws-codebuild';
+import * as iam from 'aws-cdk-lib/aws-iam'; // Added missing import
 import { Construct } from 'constructs';
 
 export class PortfolioInfrastructureStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
+
+    // Reference the existing Amplify role
+    const amplifyRole = iam.Role.fromRoleName(this, 'AmplifyRole', 'AmplifyRole-dmnlv8duzyjjd', {
+      mutable: false,
+    });
 
     // Amplify application
     const amplifyApp = new amplify.App(this, 'PortfolioApplication', {
@@ -16,7 +22,7 @@ export class PortfolioInfrastructureStack extends cdk.Stack {
         repository: 'portfolio',
         oauthToken: cdk.SecretValue.secretsManager('github-token'),
       }),
-      // Build specification for Next.js
+      role: amplifyRole, // Associate the existing role
       buildSpec: codebuild.BuildSpec.fromObject({
         version: '1.0',
         frontend: {
@@ -32,7 +38,9 @@ export class PortfolioInfrastructureStack extends cdk.Stack {
               commands: [
                 'echo "building our next.js app..."',
                 'cd portfolio',
-                'npm run build', // Updated to use next build with output: export
+                'npm run build',
+                'echo "Copying public files to out"',
+                'cp -r portfolio/public/* portfolio/out/',
                 'echo "Build completed"',
               ],
             },
