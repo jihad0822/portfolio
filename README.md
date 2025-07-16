@@ -1,6 +1,6 @@
 Amplify Portfolio Website Project
 Deliverables:
-Access my detailed breakdown on Medium here
+
 
 Website Architecture: Website_Architecture
 
