@@ -41,13 +41,13 @@ export class PortfolioInfrastructureStack extends cdk.Stack {
             },
           },
           artifacts: {
-            baseDirectory: '.next',
+            baseDirectory: 'portfolio/.next',
             files: ['**/*'],
           },
           cache: {
             paths: [
-              'node_modules/**/*',
-              '.next/cache/**/*',
+              'portfolio/node_modules/**/*',
+              'portfolio/.next/cache/**/*',
             ],
           },
         },
