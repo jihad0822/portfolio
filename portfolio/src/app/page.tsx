@@ -20,7 +20,7 @@ export default function Portfolio() {
       description:
         "Host your portfolio site on AWS Amplify with Next.js for server-side rendering and static site generation.",
       technologies: ["Next.js", "AWS Amplify", "React", "Serverless", "CI/CD"],
-      link: "https://github.com/yourusername/k8s-monitoring",
+      link: "git@github.com:jihad0822/portfolio.git",
       icon: <Server className="h-5 w-5" />,
     },
     {
