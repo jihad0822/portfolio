@@ -35,14 +35,13 @@ export class PortfolioInfrastructureStack extends cdk.Stack {
               commands: [
                 'echo "building our next.js app..."',
                 'npm run build',
-                'echo "Copying public files to out"',
-                'cp -r public/* out/',
+                
                 'echo "Build completed"',
               ],
             },
           },
           artifacts: {
-            baseDirectory: 'out',
+            baseDirectory: '.next',
             files: ['**/*'],
           },
           cache: {
