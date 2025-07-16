@@ -24,19 +24,19 @@ export default function Portfolio() {
       icon: <Server className="h-5 w-5" />,
     },
     {
-      title: "Serverless Data Pipeline",
+      title: "CloudPipeline",
       description:
-        "Event-driven data processing pipeline using AWS Lambda, SQS, and DynamoDB with automatic scaling and error handling.",
-      technologies: ["AWS Lambda", "SQS", "DynamoDB", "Python", "CloudFormation"],
-      link: "https://github.com/yourusername/serverless-pipeline",
+        "Automated deployment pipeline for static websites using AWS S3 and GitHub Actions.",
+      technologies: ["S3", "Github Actions", "Cloudformation", "Automation", "HTML"],
+      link: "https://github.com/jihad0822/cloudpipe-deploy",
       icon: <Database className="h-5 w-5" />,
     },
     {
-      title: "Zero-Trust Security Framework",
+      title: "CloudPipeline",
       description:
         "Implementation of zero-trust architecture using HashiCorp Vault, Consul Connect, and service mesh for secure microservices communication.",
       technologies: ["HashiCorp Vault", "Consul", "Istio", "mTLS", "RBAC"],
-      link: "https://github.com/yourusername/zero-trust-framework",
+      link: "https://github.com/jihad0822/cloudpipe-deploy",
       icon: <Shield className="h-5 w-5" />,
     },
   ]
