@@ -31,7 +31,8 @@ export class PortfolioInfrastructureStack extends cdk.Stack {
             build: {
               commands: [
                 'echo "building our next.js app..."',
-                'npm run build-and-export',
+                'cd portfolio',
+                'npm run build', // Updated to use next build with output: export
                 'echo "Build completed"',
               ],
             },
