@@ -27,6 +27,7 @@ export class PortfolioInfrastructureStack extends cdk.Stack {
             preBuild: {
               commands: [
                 'echo "Starting pre-build phase"',
+                'cd portfolio',
                 'npm install',
               ],
             },
