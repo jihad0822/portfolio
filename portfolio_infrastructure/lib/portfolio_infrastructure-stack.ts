@@ -8,15 +8,12 @@ export class PortfolioInfrastructureStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // Reference the existing Amplify role
     const amplifyRole = iam.Role.fromRoleName(this, 'AmplifyRole', 'AmplifyRole-dmnlv8duzyjjd', {
       mutable: false,
     });
 
-    // Amplify application
     const amplifyApp = new amplify.App(this, 'PortfolioApplication', {
       appName: 'Portfolio',
-      // Connect to your GitHub repository
       sourceCodeProvider: new amplify.GitHubSourceCodeProvider({
         owner: 'jihad0822',
         repository: 'portfolio',
@@ -30,23 +27,21 @@ export class PortfolioInfrastructureStack extends cdk.Stack {
             preBuild: {
               commands: [
                 'echo "Starting pre-build phase"',
-                'cd portfolio', // Navigate to portfolio directory
                 'npm install',
               ],
             },
             build: {
               commands: [
                 'echo "building our next.js app..."',
-                'if [ -d "portfolio" ]; then cd portfolio; else echo "portfolio directory not found"; exit 1; fi', // Check and navigate
                 'npm run build',
                 'echo "Copying public files to out"',
-                'cp -r public/* out/', // Use relative path from within portfolio
+                'cp -r public/* out/',
                 'echo "Build completed"',
               ],
             },
           },
           artifacts: {
-            baseDirectory: 'portfolio/out',
+            baseDirectory: 'out',
             files: ['**/*'],
           },
           cache: {
@@ -59,7 +54,6 @@ export class PortfolioInfrastructureStack extends cdk.Stack {
       }),
     });
 
-    // Add main branch for production
     amplifyApp.addBranch('main', {
       stage: 'PRODUCTION',
       autoBuild: true,
