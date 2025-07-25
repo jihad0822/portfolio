@@ -32,11 +32,11 @@ export default function Portfolio() {
       icon: <Database className="h-5 w-5" />,
     },
     {
-      title: "NA",
+      title: "Provisioning EKS with Terraform",
       description:
-        "Implementation of zero-trust architecture using HashiCorp Vault, Consul Connect, and service mesh for secure microservices communication.",
-      technologies: ["HashiCorp Vault", "Consul", "Istio", "mTLS", "RBAC"],
-      link: "https://github.com/jihad0822/cloudpipe-deploy",
+        "Amazon EKS project with Kubernetes for container orchestration and management.",
+      technologies: ["EKS", "Terraform", "Kubernetes", "Git", "Autoscaling"],
+      link: "https://github.com/jihad0822/eks-project",
       icon: <Shield className="h-5 w-5" />,
     },
   ]
