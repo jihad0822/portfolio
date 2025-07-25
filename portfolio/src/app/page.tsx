@@ -11,7 +11,7 @@ export default function Portfolio() {
       title: "AWS Migration Project",
       description:
         "Migrated from Console as code to Infrastructure as Code with AWS CDK Typescript",
-      technologies: ["Terraform", "AWS", "Azure", "GCP", "GitHub Actions"],
+      technologies: ["Terraform", "AWS", "CICD", "Automation", "GitHub Actions"],
       link: "https://github.com/jihad0822/techhealth-migration",
       icon: <Cloud className="h-5 w-5" />,
     },
