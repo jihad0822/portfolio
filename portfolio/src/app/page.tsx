@@ -39,6 +39,14 @@ export default function Portfolio() {
       link: "https://github.com/jihad0822/eks-project",
       icon: <Shield className="h-5 w-5" />,
     },
+    {
+      title: "ArgoCD for Kubernetes",
+      description:
+        "How to Set Up ArgoCD for Production Kubernetes Clusters",
+      technologies: ["ArgoCD", "Kubernetes", "GitOps", "CI/CD", "Helm", "ECR", "Automation"],
+      link: "https://github.com/jihad0822/argo-cd-project1.git",
+      icon: <Database className="h-5 w-5" />,
+    },
   ]
 
   return (
