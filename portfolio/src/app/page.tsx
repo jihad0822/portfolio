@@ -47,6 +47,14 @@ export default function Portfolio() {
       link: "https://github.com/jihad0822/argo-cd-project1.git",
       icon: <Database className="h-5 w-5" />,
     },
+    {
+      title: "Terraform Ansible Integration",
+      description:
+        "How to Set Up Ansible with Terraform for Configuration Management",
+      technologies: ["Terraform", "Ansible", "Automation", "Configuration Management", "CI/CD"],
+      link: "https://github.com/jihad0822/ansible-w-terraform.git",
+      icon: <Database className="h-5 w-5" />,
+    },
   ]
 
   return (
