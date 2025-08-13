@@ -16,6 +16,14 @@ export default function Portfolio() {
       icon: <Cloud className="h-5 w-5" />,
     },
     {
+      title: "AWS EKS Infrastructure Setup with Terraform",
+      description:
+        "Comprehensive guide and Terraform configurations for setting up an AWS Elastic Kubernetes Service (EKS) cluster, along with related AWS resources and Kubernetes components",
+      technologies: ["Terraform", "Kustomize", "EKS", "Automation", "Helm", "Horizontal Pod Autoscaler"],
+      link: "https://github.com/jihad0822/eks-project.git",
+      icon: <Cloud className="h-5 w-5" />,
+    },
+    {
       title: "Next.Js Portfolio Site on AWS Amplify",
       description:
         "Host your portfolio site on AWS Amplify with Next.js for server-side rendering and static site generation.",
