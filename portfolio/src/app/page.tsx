@@ -40,15 +40,15 @@ export default function Portfolio() {
       icon: <Database className="h-5 w-5" />,
     },
     {
-      title: "Provisioning EKS with Terraform",
+      title: "ArgoCD for Kubernetes management (GitOps)",
       description:
         "Amazon EKS project with Kubernetes for container orchestration and management.",
-      technologies: ["EKS", "Terraform", "Kubernetes", "Git", "Autoscaling"],
-      link: "https://github.com/jihad0822/eks-project",
+      technologies: ["ArgoCd", "Helm", "Kubernetes", "Git", "Kustomize", "Gitops"],
+      link: "https://github.com/jihad0822/argocd-kubernetes-gitops-project.git",
       icon: <Shield className="h-5 w-5" />,
     },
     {
-      title: "ArgoCD for Kubernetes",
+      title: "ArgoCD for Kubernetes management project 2",
       description:
         "How to Set Up ArgoCD for Production Kubernetes Clusters",
       technologies: ["ArgoCD", "Kubernetes", "GitOps", "CI/CD", "Helm", "ECR", "Automation"],
