@@ -1,8 +1,7 @@
-Amplify Portfolio Website Project
-Deliverables:
+## Amplify Portfolio Website 
 
 
-Website Architecture: Website_Architecture
+
 
 Project Details
 This repository contains the code and infrastructure definition for a modern, professional cloud engineer portfolio website. The project demonstrates a full CI/CD pipeline using Next.js, AWS Amplify, and AWS Cloud Development Kit (CDK).
@@ -10,11 +9,14 @@ This repository contains the code and infrastructure definition for a modern, pr
 Prerequisites
 Before you begin, ensure you have the following installed and configured:
 
+```
 Download & Install Git
 Download & Install Node.js (npm is included)
 Install & Configure AWS CLI with your AWS credentials.
 AWS CDK CLI: Install globally: npm install -g aws-cdk
 Domain (Optional): If you wish to use a custom domain managed by AWS Route 53
+
+```
 Quick Start Guide
 Ready to get this project running quickly? Follow these steps:
 
